@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --background-color: rgb(251, 223, 188);
+}
+
+body {
+    background-color: rgb(162, 160, 157);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #4a4a4a;
+    border-radius: 4px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+header nav form {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    flex-grow: 1;
+    margin-right: 5px;
+
+}
+
+.search_btn,
+.input {
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_btn {
+    background-color: #f44336;
+    cursor: pointer;
+    color: #fff;
+}
+
+.search_btn:hover,
+.current_match:hover,
+.next_match:hover,
+.match_list:hover,
+.team_list:hover,
+.series_list:hover,
+.player_list:hover,a:hover {
+    background-color: #a9641f;
+
+}
+
+.current_match,
+.next_match,
+.match_list,
+.series_list,
+.player_list,
+.team_list ,a{
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding: 4px;
+}
+a{
+    text-decoration: none;
+    color: #2b1d0f;
+    font-size: 15px;
+    font: bold;
+}
+.matchscore {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: #2b1d0f;
+    max-width: 350px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.6s ease-in-out;
+    transition: border 0.7s ease-out;
+}
+
+.matchscore button {
+    font-size: 18px;
+    border: none;
+    background-color: #f44336;
+    padding: 5px;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.cric_container {
+    text-align: center;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    place-items: center;
+}
+
+.matchscore,
+.nextmatchscore {
+    background-color: rgb(242, 182, 182);
+    display: flex;
+    flex-direction: column;
+    color: #2b1d0f;
+    max-width: 350px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.matchscore:hover,
+.nextmatchscore:hover {
+    transform: scale(1.04);
+}
+
+.matchscore h3,
+h4,
+p,
+.nextmatchscore h3,
+h4,
+p {
+    padding: 10px;
+}
+
+.matchscore h2,
+.nextmatchscore h2 {
+    background-color: #d17c27;
+    border-radius: 10px;
+}
+
+.matchscore h3 span,
+.nextmatchscore h3 span {
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.matchscore h3,
+.nextmatchscore h3 {
+    color: rgba(249, 6, 136, 0.981);
+}
+
+.matchscore h4,
+.nextmatchscore h4 {
+    color: rgb(232, 9, 232);
+}
+
+.matchscore p,
+.nextmatchscore p {
+    color: rgba(3, 94, 94, 0.922);
+}
+
+.status {
+    color: blue;
+}
+
+/* .match_details {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color: #1f4320;
+    color: var(--p-color);
+    border-radius: 10px;
+    width: 50%;
+    height: 70%;
+    font-size: 20px;
+    transform: all 0.5s ease-in-out;
+    overflow-y: scroll;
+    
+           } 
+
+.closebtn {
+    background-color: #f44336;
+    transition: background-colr 0.3s ease-in-out;
+    font-size: 20px;
+   
+    padding: 2px;
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.closebtn:hover {
+    background-color: #a9641f;
+}*/
