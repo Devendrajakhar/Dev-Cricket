@@ -1,39 +1,3 @@
-// const serieslist = document.querySelector('.series_list')
-
-// const CricketContainer = document.querySelector('.cric_container');
-
-// const fetchserieslist = async (value) => {
-//     const data = await fetch(`https://api.cricapi.com/v1/series?apikey=0a55bb27-b949-47f5-b778-75dd29ddfbd0&offset=0`);
-//     const response = await data.json();
-//     CricketContainer.textContent = "";
-//     response.data.forEach(data => {
-//       const nextmatchDiv = document.createElement('div');
-//       nextmatchDiv.classList.add('nextmatchscore');
-//       try {
-//         nextmatchDiv.innerHTML = `
-//           <h2>${data.name}</h2>
-//           <h3><span>${data.startDate}</span> To <span>${data.endDate}</span></h3>
-//           <p>Odi = ${data.odi} </p>
-//           <p>T20= ${data.t20} </p> 
-//           <p>TEST = ${data.test} </p> 
-
-//           <div class="status">Total matches = ${data.matches}</div>
-//           `
-//       } catch (error) {
-//         console.log('jai ho')
-//       }
-//       CricketContainer.appendChild(nextmatchDiv);
-//     })
-  
-//   }
-  
-//  serieslist.onclick = (e) => {
-//     e.preventDefault();
-//     for (let i = 0; i < 1; i++) {
-//       fetchserieslist(i);
-//     }
-//   }
-
 const serieslist = document.querySelector('.series_list');
 const CricketContainer = document.querySelector('.cric_container');
 

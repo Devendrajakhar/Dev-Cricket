@@ -1,35 +1,3 @@
-// const playerlist= document.querySelector('.player_list')
-
-
-// const CricketConTainer = document.querySelector('.cric_container');
-
-// const fetchplayerlist = async (value) => {
-//     const data = await fetch(`https://api.cricapi.com/v1/players?apikey=0a55bb27-b949-47f5-b778-75dd29ddfbd0&offset=0`);
-//     const response = await data.json();
-//     CricketConTainer.textContent = "";
-//     response.data.forEach(data => {
-//       const nextmatchDiv = document.createElement('div');
-//       nextmatchDiv.classList.add('nextmatchscore');
-//       try {
-        
-//         nextmatchDiv.innerHTML = `
-//           <p>${data.name}</h>
-//           <p><span>${data.country}</span> </p>       
-//           `
-//       } catch (error) {
-//         console.log('jai ho')
-//       }
-//       CricketConTainer.appendChild(nextmatchDiv);
-//     })
-  
-//   }
-  
-//  playerlist.onclick = (e) => {
-//     e.preventDefault();
-//     for (let i = 0; i < 1; i++) {
-//       fetchplayerlist(i);
-//     }
-//   }
 const playerlist = document.querySelector('.player_list');
 const CricketConTainer = document.querySelector('.cric_container');
 
